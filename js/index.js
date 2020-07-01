@@ -8,7 +8,7 @@ function loadVip() {
 			songsArr.push({
 				title: track.find("creator").text() + ' - ' + track.find("title").text(),
 				artist: "",
-				mp3: track.find("location").text(),
+				m4a: track.find("location").text(),
 			});
 		});
 
@@ -19,7 +19,7 @@ function loadVip() {
 		songsArr,
 		{
 			swfPath: "js",
-			supplied: "mp3",
+			supplied: "m4a,mp3",
 			wmode: "window",
 			smoothPlayBar: true,
 			keyEnabled: true,
