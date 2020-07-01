@@ -1,6 +1,6 @@
 function loadVip() {
 	$.ajax("playlist.xml")
-	.success(function(roster) {
+	.success(function(playlist) {
 
         var songsArr = [];
 		$(playlist).find("track").each(function(idx, track) {
