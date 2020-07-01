@@ -3,7 +3,7 @@ function loadVip() {
 	.success(function(roster) {
 
         var songsArr = [];
-		$(roster).find("track").each(function(idx, track) {
+		$(playlist).find("track").each(function(idx, track) {
 			track = $(track);
 			songsArr.push({
 				title: track.find("creator").text() + ' - ' + track.find("title").text(),
