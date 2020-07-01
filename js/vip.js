@@ -1,5 +1,5 @@
 function loadVip() {
-	$.ajax("playlist.xml")
+	$.ajax("roster.xml")
 	.success(function(roster) {
 
         var songsArr = [];
