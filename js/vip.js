@@ -19,7 +19,7 @@ function loadVip() {
 		songsArr,
 		{
 			swfPath: "js",
-			supplied: "m4a",
+			supplied: "m4a,mp3",
 			wmode: "window",
 			smoothPlayBar: true,
 			keyEnabled: true,
