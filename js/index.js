@@ -1,9 +1,9 @@
 function loadVip() {
-	$.ajax("playlist.xml")
-	.success(function(playlist) {
+	$.ajax("demo.xml")
+	.success(function(demo) {
 
         var songsArr = [];
-		$(playlist).find("track").each(function(idx, track) {
+		$(demo).find("track").each(function(idx, track) {
 			track = $(track);
 			songsArr.push({
 				title: track.find("creator").text() + ' - ' + track.find("title").text(),
